@@ -17,13 +17,13 @@ else :
 
 
 class Calisanlar: 
-    def __init__ (worker, title, name, surname):
-        worker.title = title
-        worker.name = name 
-        worker.surname = surname
+    def __init__ (personnel, title, name, surname):
+        personnel.title = title
+        personnel.name = name 
+        personnel.surname = surname
     
-    def welcome_display (worker):
-        message = f"hosgeldin {worker.title} {worker.name} {worker.surname}"
+    def welcome_display (personnel):
+        message = f"hosgeldin {personnel.title} {personnel.name} {personnel.surname}"
         print(message)
 
 calisan1 = Calisanlar(title , name, surname)
