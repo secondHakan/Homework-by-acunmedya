@@ -1,0 +1,18 @@
+text = input("adinizi giriniz:")
+
+with open("bilgiler.txt", "w") as dosya:
+    dosya.write(text + "\n")
+
+with open("bilgiler.txt", "r") as dosya:
+    dosya.read()
+with open("bilgiler.txt", "a") as dosya:
+    a = input("baba adiniz giriniz: ")
+    b = input("anne adini giriniz: ")
+    c = input("yasinizi giriniz: ")
+    dosya.write(a + "\n")
+    dosya.write(b + "\n")
+    dosya.write(c + "\n")
+
+with open("bilgiler.txt", "r") as dosya:
+    print("dosyanin son hali: ")
+    print(dosya.read())
